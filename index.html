@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>-YH.X1t.hk 😎</title>
+
+<style>
+body{
+    margin:0;
+    background: radial-gradient(circle at top, #0a0a0a 0%, #000 80%);
+    font-family: 'Courier New', monospace;
+    color:#00ffcc;
+    text-align:center;
+    overflow-x:hidden;
+}
+
+/* الكرت */
+.card{
+    width:90%;
+    max-width:900px;
+    margin:50px auto;
+    padding:30px;
+    background:rgba(0,0,0,0.85);
+    border-radius:20px;
+    box-shadow:0 0 20px #00ffcc;
+    transition:0.4s;
+    animation:float 6s ease-in-out infinite;
+}
+
+.card:hover{
+    box-shadow:0 0 40px #00ffcc, 0 0 80px #00ffcc;
+    transform:scale(1.02);
+}
+
+@keyframes float{
+    0%{transform:translateY(0px);}
+    50%{transform:translateY(-15px);}
+    100%{transform:translateY(0px);}
+}
+
+/* الصورة */
+.profile-container{
+    position:relative;
+    width:200px;
+    height:200px;
+    margin:0 auto 20px;
+}
+
+.profile-container img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+    position:relative;
+    z-index:2;
+}
+
+.profile-container::before{
+    content:'';
+    position:absolute;
+    top:-8px;
+    left:-8px;
+    width:216px;
+    height:216px;
+    border-radius:50%;
+    background:conic-gradient(#00ffcc, transparent, #00ffcc);
+    animation:spin 4s linear infinite;
+    z-index:1;
+}
+
+@keyframes spin{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+
+h1{
+    text-shadow:0 0 10px #00ffcc;
+}
+
+.section{
+    margin-top:40px;
+}
+
+.section img{
+    max-width:100%;
+    margin:10px 0;
+}
+
+/* زر التواصل */
+.contact-btn{
+    margin-top:25px;
+    padding:12px 30px;
+    background:black;
+    color:#00ffcc;
+    border:2px solid #00ffcc;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.contact-btn:hover{
+    background:#00ffcc;
+    color:black;
+    box-shadow:0 0 20px #00ffcc;
+}
+
+/* أزرار التواصل */
+.contact-links{
+    display:none;
+    margin-top:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.badge{
+    padding:10px 20px;
+    border-radius:8px;
+    font-weight:bold;
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+.badge:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px #00ffcc;
+}
+
+.github{background:#2ea043;}
+.facebook{background:#1877f2;}
+.telegram{background:#0088cc;}
+.instagram{background:#c13584;}
+
+canvas{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+</style>
+</head>
+
+<body>
+
+<canvas id="bg"></canvas>
+
+<div class="card">
+
+    <div class="profile-container">
+        <img src="https://f.top4top.io/p_3698cwqu30.jpg">
+    </div>
+
+    <h1>-YH.X1t.hk 😎</h1>
+    <p>KNOW MORE ABOUT ME >>>></p>
+
+    <!-- GIFs -->
+    <div class="section">
+        <img src="https://user-images.githubusercontent.com/49580304/110319833-47367180-7fc4-11eb-87a7-392509eca9d7.gif">
+      
+        <img src="https://user-images.githubusercontent.com/49580304/110318584-81067880-7fc2-11eb-8391-152d308e7f2b.gif">
+    </div>
+
+    <!-- GitHub Stats -->
+    <div class="section">
+        <a href="https://github.com/0xbitx" target="_blank">
+        </a>
+        <br><br>
+        <a href="https://github.com/0xbitx" target="_blank">
+        </a>
+    </div>
+ 
+    <button class="contact-btn" onclick="toggleContacts()">تواصل معي</button>
+
+    <!-- أزرار حساباتك -->
+    <div class="contact-links" id="contactBox">
+
+        <a href="https://github.com/0xbitx" target="_blank" class="badge github">GITHUB</a>
+
+        <a href="https://www.facebook.com/share/1KDhNR1WUK/" target="_blank" class="badge facebook">FACEBOOK</a>
+
+        <a href="https://t.me/YahyaH1k" target="_blank" class="badge telegram">TELEGRAM</a>
+
+        <a href="https://www.instagram.com/o2oc_?igsh=MWN0dXBpajdzaTY2Zw==" target="_blank" class="badge instagram">INSTAGRAM</a>
+
+    </div>
+
+</div>
+
+<script>
+function toggleContacts(){
+    var box = document.getElementById("contactBox");
+    if(box.style.display === "flex"){
+        box.style.display = "none";
+    } else {
+        box.style.display = "flex";
+    }
+}
+
+/* خلفية الجسيمات */
+const canvas = document.getElementById("bg");
+const ctx = canvas.getContext("2d");
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particles = [];
+
+for(let i=0;i<100;i++){
+    particles.push({
+        x:Math.random()*canvas.width,
+        y:Math.random()*canvas.height,
+        r:Math.random()*2,
+        d:Math.random()*1
+    });
+}
+
+function draw(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle="#00ffcc";
+    particles.forEach(p=>{
+        ctx.beginPath();
+        ctx.arc(p.x,p.y,p.r,0,Math.PI*2,true);
+        ctx.fill();
+    });
+    update();
+}
+
+function update(){
+    particles.forEach(p=>{
+        p.y += p.d;
+        if(p.y>canvas.height){
+            p.y=0;
+            p.x=Math.random()*canvas.width;
+        }
+    });
+}
+
+setInterval(draw,33);
+</script>
+
+</body>
+</html>
